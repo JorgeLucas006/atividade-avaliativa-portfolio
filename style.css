@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: aquamarine;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+
+}
+
+.container {
+  margin: 5rem 0;
+  display: flex;
+  max-width: 1000px;
+  
+}
+
+main {
+  width: 700px;
+  background-color: #fff;
+}
+
+footer {
+  background-color: #19304f;
+  width: 300px;
+}
