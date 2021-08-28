@@ -6,16 +6,18 @@
 
 body {
   background-color: aquamarine;
+
+}
+
+.center {
   display: flex;
   justify-content: center;
 }
 
 .container {
-  border-radius: 300px;
-  margin: 5rem 2rem;
   display: flex;
-  max-width: 800px;
-  
+  width: 700px;
+  margin: 5rem 0;
 }
 
 .name {
@@ -52,7 +54,7 @@ body {
 }
 
 main {
-  width: 700px;
+  width: 60%;
   background-color: #fff;
   padding: 3rem 2rem;
 }
@@ -90,11 +92,15 @@ main section p {
   color: #494949;
 }
 
+main section ul {
+  padding-left: 18px;
+}
+
 footer {
   background-color: #19304f;
   color: #fff;
   padding: 5rem 3rem;
-  width: 300px;
+  width: max-content;
 }
 
 footer section h2 {
@@ -104,4 +110,39 @@ footer section h2 {
 
 footer p {
   line-height: 15px;
+}
+
+@media (max-width: 700px){
+  .container {
+    margin: 5rem 2rem;
+  }
+
+  footer {
+    padding: 5rem 1.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+
+  .container {
+    display: block;
+  }
+
+  header img {
+    width: 100px;
+    padding-bottom: 1rem;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main,
+  footer {
+    width: 100%;
+    padding: 2rem 1rem;
+  }
+
 }
