@@ -2,6 +2,11 @@
   margin: 0;
   box-sizing: border-box;
   font-family: Roboto;
+  line-height: 1.8;
+}
+
+a {
+  height: auto;
 }
 
 body {
@@ -22,20 +27,18 @@ body {
 
 .name {
   width: max-content;
-  height: 75px;
-  flex-direction: column;
+  height: 100px;
+  
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
+a,
 .icon {
-  width: 30px;
-  border-radius: 50%;
-}
-
-.contact {
-  margin-bottom: 50px;
+  padding: 2rem 0;
+  width: 32px;
 }
 
 .skills h2 {
@@ -59,19 +62,20 @@ main {
   padding: 3rem 2rem;
 }
 
-main img {
-  width: 75px;
+main header img {
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   float: left;
   margin-right: 11px;
 }
 
-h1 {
+.name h1 {
   margin-bottom: 6px;
   color: #253753;
 }
 
-small {
+.name small {
   font-size: .9rem;
   color: #253753;
 }
@@ -88,12 +92,16 @@ main section h2 {
 
 main section p { 
   text-align: justify;
-  line-height: 18px;
   color: #494949;
 }
 
 main section ul {
   padding-left: 18px;
+  color: #494949;
+}
+
+main section ul li::marker {
+  color: #253753;
 }
 
 footer {
@@ -122,27 +130,35 @@ footer p {
   }
 }
 
-@media (max-width: 640px) {
-
-  .container {
-    display: block;
-  }
-
-  header img {
-    width: 100px;
-    padding-bottom: 1rem;
-  }
-
+@media (max-width: 665px){
+  .name {
+    width: 100%;
+  }  
+  
   header {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
+}
+
+@media (max-width: 580px) {
+
+  .container {
+    display: block;
+  }
+
+  main header img {
+    width: 125px;
+    height: 125px;
+    margin: 0;
+  }
+
   main,
   footer {
     width: 100%;
-    padding: 2rem 1rem;
+    padding: 2rem 2rem;
   }
 
 }
