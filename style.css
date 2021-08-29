@@ -3,15 +3,17 @@
   box-sizing: border-box;
   font-family: Roboto;
   line-height: 1.8;
-}
-
-a {
-  height: auto;
+  text-decoration: none;
 }
 
 body {
   background-color: aquamarine;
+}
 
+main li,
+main p,
+aside {
+  color: #494949;
 }
 
 .center {
@@ -35,9 +37,19 @@ body {
   justify-content: center;
 }
 
-a,
-.icon {
-  padding: 2rem 0;
+.contact {
+  margin-bottom: 3rem;
+}
+
+.contact a {
+  color: #fff;
+}
+
+.contact p {
+  margin-bottom: 1rem;
+}
+
+#icon {
   width: 32px;
 }
 
@@ -47,19 +59,14 @@ a,
 
 .skills p {
   padding-left: 5px;
-}
-
-.skills hr {
-  border: 1.5px solid #fff;
-  border-radius: 1px;
-  background: #fff;
-  margin: 3px 0 9px 0;
+  border-bottom: 3px solid #fff;
+  margin-bottom: .2rem;
 }
 
 main {
   width: 60%;
   background-color: #fff;
-  padding: 3rem 2rem;
+  padding: 3rem 2rem 0 2rem;
 }
 
 main header img {
@@ -92,16 +99,18 @@ main section h2 {
 
 main section p { 
   text-align: justify;
-  color: #494949;
 }
 
 main section ul {
   padding-left: 18px;
-  color: #494949;
 }
 
 main section ul li::marker {
   color: #253753;
+}
+
+aside {
+  padding: 2rem 0 1rem 0;
 }
 
 footer {
@@ -111,13 +120,17 @@ footer {
   width: max-content;
 }
 
+footer a {
+  margin-right: 7px;
+}
+
 footer section h2 {
   font-size: 20px;
   margin-bottom: 11px;
 }
 
-footer p {
-  line-height: 15px;
+footer aside {
+  display: none;
 }
 
 @media (max-width: 700px){
@@ -147,6 +160,15 @@ footer p {
 
   .container {
     display: block;
+  }
+
+  main aside {
+    display: none;
+  }
+
+  footer aside {
+    display: block;
+    color: #fff;
   }
 
   main header img {
