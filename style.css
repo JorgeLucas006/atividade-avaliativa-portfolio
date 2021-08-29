@@ -49,7 +49,7 @@ aside {
   margin-bottom: 1rem;
 }
 
-#icon {
+.icon {
   width: 32px;
 }
 
@@ -111,6 +111,8 @@ main section ul li::marker {
 
 aside {
   padding: 2rem 0 1rem 0;
+  font-size: .8rem;
+  text-align: center;
 }
 
 footer {
@@ -165,10 +167,21 @@ footer aside {
   main aside {
     display: none;
   }
+  
+  main,
+  footer {
+    width: 100%;
+    padding: 2rem 2rem;
+  }
+  
+  .container footer{
+    padding-bottom: .5rem;
+  }
 
   footer aside {
     display: block;
     color: #fff;
+    padding-top: 2rem;
   }
 
   main header img {
@@ -177,10 +190,5 @@ footer aside {
     margin: 0;
   }
 
-  main,
-  footer {
-    width: 100%;
-    padding: 2rem 2rem;
-  }
 
 }
